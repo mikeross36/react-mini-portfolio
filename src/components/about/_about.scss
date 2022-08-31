@@ -1,0 +1,100 @@
+@use "../../style/mixins";
+@use "../../style/variables" as *;
+
+.about {
+
+    &__container {
+        display: grid;
+
+        @include mixins.breakpoint-up(small){
+            grid-template-columns: max-content 1fr;
+            justify-items: center;
+            justify-content: space-around;  
+            column-gap: 6rem;
+        }
+
+        @include mixins.breakpoint-up(xlarge) {
+            padding-top: 2rem;
+        }
+
+        .about__resume-title {
+            color: $textClr;
+            text-transform: uppercase;
+            margin-bottom: $mb-1;
+        }
+
+        & p {
+            font-size: $fontMd;
+            color: $textClr;
+            margin-bottom: $mb-0-5;
+            line-height: 150%;
+        }
+    }
+
+    .about__resume {
+        margin-bottom: $mb-1;
+
+        &-item {
+            position: relative;
+            margin-bottom: $mb-2;
+            max-width: 20rem;
+            
+            &::after {
+                content: "";
+                position: absolute;
+                height: 1px;
+                width: 100%;
+                left: 0;
+                right: 0;
+                background-color: $firstClr;
+                bottom: -5%;
+            }
+
+            @include mixins.breakpoint-up(medium) {
+                max-width: initial;
+            }
+        }
+    }
+
+    .about__skills {
+        padding-right: 1rem;
+        margin-bottom: $mb-1;
+
+        .about__skills-item {
+            display: flex;
+            column-gap: 3rem;
+            align-items: center;
+            margin-bottom: .2rem;
+
+            &:last-child {
+                border-bottom: 1px solid $firstClr;
+                padding-bottom: 1rem;
+            }
+
+            .about__tickbox {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+    }
+
+    .about__images {
+
+        @include mixins.breakpoint-up(medium) {
+            grid-column: 1 / -1;
+            justify-self: center;
+        }
+
+        @include mixins.breakpoint-up(large) {
+            grid-column: initial;
+        }
+
+        .about__img {
+            width: 13rem;
+
+            @include mixins.breakpoint-up(large){
+                width: 17rem;
+            }
+        }
+    }
+}
