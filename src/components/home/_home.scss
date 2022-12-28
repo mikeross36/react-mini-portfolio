@@ -27,10 +27,6 @@
 
     .home__img-bcg {
         background-color: $firstClr;
-        background: linear-gradient(
-            rgba($firstClr, .7), 
-            rgba($firstClr, .7)), 
-            url("../../images/home-bcg2.jpg") center/cover no-repeat;
         width: 14rem;
         height: 29rem;
         padding-bottom: 2rem;
