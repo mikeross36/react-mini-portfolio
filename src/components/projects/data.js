@@ -28,7 +28,7 @@ export const projects = [
         id: nextId(),
         image: drones,
         btns: [
-            { id: nextId(), url: "https://drones-crude-rest-api.cyclic.app", icon: eye },
+            { id: nextId(), url: "drones-node-express-mongodb-crud-rest-api.onrender.com", icon: eye },
             {id: nextId(), url:"https://github.com/mikeross36", icon: github}
         ]
     },
