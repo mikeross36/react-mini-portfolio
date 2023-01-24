@@ -5,14 +5,15 @@ import drones from "../../images/drones.png"
 import fitness from "../../images/fitness.png"
 import eye from "../../images/eye-icon.svg"
 import github from "../../images/github-icon.svg"
+import ganja from "../../images/ganjawebshop.png"
 
 
 export const projects = [
     {
         id: nextId(),
-        image: coffeebar,
+        image: ganja,
         btns: [
-            { id: nextId(), url: "https://coffeebar-website.netlify.app/", icon: eye },
+            { id: nextId(), url: "https://ganjawebshop.cyclic.app", icon: eye },
             {id: nextId(), url:"https://github.com/mikeross36", icon: github}
         ]
     },
