@@ -60,11 +60,12 @@
             box-shadow: $box-shadow-1;
 
             @include mixins.breakpoint-up(medium){
-                width: 17rem;
+                width: 20rem;
             }
 
             @include mixins.breakpoint-up(large){
                 top: 16%;
+                right: 10%;
             }
         }
     }

@@ -1,5 +1,5 @@
 import React from "react";
-import portfolioImg from "../../images/portfolio-1.jpg"
+import portfolioImg from "../../images/user-portfolio.jpg"
 import { socials } from "./data";
 
 const Home = () => {

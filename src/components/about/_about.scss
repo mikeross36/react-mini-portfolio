@@ -33,6 +33,11 @@
 
     .about__resume {
         margin-bottom: $mb-1;
+        height: 100%;
+
+        @include mixins.breakpoint-up(medium) {
+            margin-bottom: 0;
+        }
 
         &-item {
             position: relative;

@@ -1,6 +1,8 @@
 import nextId from "react-id-generator";
 import javascript from "../../images/javascript-icon.svg"
 import react from "../../images/react-icon.svg"
+import node from "../../images/nodejs-icon.svg"
+import mongo from "../../images/mongodb-icon.svg"
 import html from "../../images/html-icon.svg"
 import css from "../../images/css-icon.svg"
 import sass from "../../images/sass-icon.svg"
@@ -32,6 +34,16 @@ export const skills = [
         id: nextId(),
         experience: tickbox,
         skill: react
+    },
+    {
+        id: nextId(),
+        experience: tickbox,
+        skill: node
+    },
+    {
+        id: nextId(),
+        experience: tickbox,
+        skill: mongo
     },
     {
         id: nextId(),
